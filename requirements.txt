@@ -1,0 +1,14 @@
+tkcalendar
+pytz
+tweepy
+pandas
+openpyxl
+geopy
+pylustrator
+ttkthemes
+pyinstaller
+emoji
+joblib
+onnxruntime
+scikit-learn
+sentence-transformers
