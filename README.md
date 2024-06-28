@@ -2,14 +2,21 @@
 ![Logo](https://github.com/cssturkiye/fastcsstool/assets/53001810/20a33f92-3d37-48eb-8c2d-e6910fc6a92c)
 
 ## Overview
-Fast CSS Tool is a comprehensive application designed to assist social scientists in analyzing digital datasets, including social media data. This tool leverages a variety of machine learning algorithms to preprocess, filter, and classify data, providing a streamlined workflow for data analysis.
+👋🏻 Welcome to the Field of Computational Social Science!
+
+Fast CSS Tool is here to simplify your data analysis journey. This intuitive application is designed to assist social scientists in analyzing digital datasets, including social media data, with ease.
+
+Even if you have little to no coding experience, Fast CSS Tool makes it easy to preprocess, filter, and classify your data. The tool automates many complex backend processes, leveraging machine learning algorithms to streamline your workflow.
+
+Whether you're new to coding or simply looking for a more efficient way to handle your data, Fast CSS Tool provides a user-friendly interface to help you get the job done.
+
 ![image](https://github.com/cssturkiye/fastcsstool/assets/53001810/c037c3fd-eb01-4d9e-8178-4c9e9b4fea59)
 
 
 ## Features
 
 - **Data Preprocessing**: Import data, apply manual and AI-based filters.
-- **Model Training**: Train multiple machine learning models using scikit-learn.
+- **Model Training**: Train multiple machine learning models using SentenceTransformers, Microsoft's FLAML and scikit-learn.
 - **Model Evaluation**: Evaluate models using various metrics.
 - **Export Results**: Save models and export evaluation results.
 
@@ -150,21 +157,14 @@ Fast CSS Tool is a comprehensive application designed to assist social scientist
 - **Graphical Analysis**: Perform and visualize various analyses like time series and distribution of data points.
 - **Export Analysis Results**: Save your analysis results for reporting or documentation purposes.
 
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a new Pull Request.
-
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the GNU GENERAL PUBLIC LICENSE.
 
 ## Acknowledgements
-
-- This tool uses the [scikit-learn](https://scikit-learn.org/) library for machine learning algorithms.
-- Special thanks to all contributors and the open-source community.
+This tool uses the following main packages
+- [Sentence Transformers](https://sbert.net/) library for accessing, using, and training state-of-the-art text and image embedding models.
+- [FLAML](https://microsoft.github.io/FLAML/) library for Automated Machine Learning & Tuning.
+- [scikit-learn](https://scikit-learn.org/) library for machine learning algorithms.
 
 For any issues or questions, please contact [info@csstr.org].
