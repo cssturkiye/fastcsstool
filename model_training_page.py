@@ -224,7 +224,7 @@ class ModelTrainingPage(tk.Frame):
 
         # Specify automl goal and constraint
         automl_settings = {
-            "time_budget": 100,  # in seconds
+            "time_budget": 300,  # in seconds
             "metric": 'macro_f1',
             "task": 'classification',  # can be 'classification', 'regression', or 'ranking'
             "log_file_name": 'automl.log',  # flaml log file

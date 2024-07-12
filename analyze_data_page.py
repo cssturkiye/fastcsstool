@@ -99,6 +99,12 @@ class AnalyzeDataPage(tk.Frame):
 
 
 
+    def import_results_test(self):
+        # TEST
+        self.df = pd.read_excel('temp/Analyzed_Results.xlsx')
+        self.plot_location_distributions()
+
+
     def import_results(self):
         filename = filedialog.askopenfilename(title="Open Results File", filetypes=[("Excel files", "*.xlsx"), ("CSV files", "*.csv") ])
         if filename:
@@ -256,7 +262,7 @@ class AnalyzeDataPage(tk.Frame):
             tk.messagebox.showwarning("Warning", "Please load results data and ensure a results column is present before attempting to show graphs.")
 
     def plot_log_time_chart(self):
-        # Implement the function to plot the logarithmic time chart
+        # plot the logarithmic time chart
         self.plot_time_chart(log_scale=True)
         pass
 
@@ -284,7 +290,8 @@ class AnalyzeDataPage(tk.Frame):
                     step = 1
 
                 ax.xaxis.set_major_locator(ticker.MultipleLocator(step))  # Set dynamic step based on data range
-                ax.xaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: location_data.index[int(x/step)].strftime('%Y-%m') if int(x/step) < len(location_data) else ''))
+                # ax.xaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: location_data.index[int(x/step)].strftime('%Y-%m') if int(x/step) < len(location_data) else ''))
+                ax.xaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: location_data.index[int(x)].strftime('%Y-%m') if int(x) < len(location_data) else ''))
 
                 ax.xaxis.set_minor_locator(ticker.AutoMinorLocator(2))  # Adds one minor tick between major ticks
 

@@ -55,7 +55,7 @@ class MainApplication:
             btn = ttk.Button(self.side_menu, text=page_name, command=lambda pc=page_class: self.show_page(pc))
             btn.pack(fill="x")
 
-        self.show_page(AboutPage)  # Show the About page by default
+        self.show_page(AnalyzeDataPage)  # Show the About page by default
 
     def show_page(self, page_class):
         if page_class not in self.pages:

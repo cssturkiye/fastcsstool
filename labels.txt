@@ -1,0 +1,2 @@
+birincil_etiket_1,birincil_etiket_2,birincil_etiket_3
+ikincil_etiket_1,ikincil_etiket_2
