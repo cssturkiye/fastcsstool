@@ -190,8 +190,6 @@ FastCSSTool includes an account-level bot detector to reduce noise before labeli
   <sub>Confusion matrix on the held-out test set.</sub>
   <br/>
   <sub>4,102 humans and 1,572 bots correctly identified; 345 false positives, 618 false negatives.</sub>
-  <br/>
-  <a href="./BOT_DETECTION.md">Full details and methodology</a>
 </div>
 
 ## License
