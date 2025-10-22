@@ -9,9 +9,9 @@
 
 *FastCSSTool: A No‑Code Platform for Computational Social Science Text Classification*
 
-**Evrim Çağın Polat** and **Evrim Yılmaz Polat**  
-1*Chief Technical Officer, Notrino Research, Üniversiteler Mah. İhsan Doğramacı Blv. No:31/20 ODTÜ Teknokent Çankaya, Ankara, 06800, Türkiye.*  
-2Department of Sociology, Faculty of Humanities and Social Sciences, Zonguldak Bülent Ecevit University, Zonguldak, 67100, Türkiye.
+**Evrim Çağın Polat¹** and **Evrim Yılmaz Polat²**</br>
+1 *Chief Technical Officer, Notrino Research*  
+2 *Department of Sociology, Zonguldak Bülent Ecevit University*
 
 </div>
 
