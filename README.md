@@ -1,7 +1,29 @@
-# Fast CSS Tool
+# FastCSSTool: A No‑Code Platform for Computational Social Science Text Classification
+
+<div align="center">
+
+[![Paper](https://img.shields.io/badge/Paper-Under%20Review-orange)](https://github.com/cssturkiye/fastcsstool)
+[![Tool](https://img.shields.io/badge/Tool-FastCSSTool-blue)](https://github.com/cssturkiye/fastcsstool)
+
 ![Logo](https://github.com/cssturkiye/fastcsstool/assets/53001810/20a33f92-3d37-48eb-8c2d-e6910fc6a92c)
 
-## Overview
+*FastCSSTool: A No‑Code Platform for Computational Social Science Text Classification*
+
+**Evrim Çağın Polat** and **Evrim Yılmaz Polat**  
+1*Chief Technical Officer, Notrino Research, Üniversiteler Mah. İhsan Doğramacı Blv. No:31/20 ODTÜ Teknokent Çankaya, Ankara, 06800, Türkiye.*  
+2Department of Sociology, Faculty of Humanities and Social Sciences, Zonguldak Bülent Ecevit University, Zonguldak, 67100, Türkiye.
+
+</div>
+
+---
+
+## Abstract
+
+Computational social science often relies on end-to-end text-classification pipelines that many researchers cannot readily implement or reproduce. We present FastCSSTool, a no-code platform that integrates data ingestion, preprocessing, labeling, embedding-based Automated Machine Learning (AutoML) training, evaluation, analysis, and visualization in a single GUI. The system encodes texts as sentence embeddings (`paraphrase-multilingual-mpnet-base-v2`) and selects calibrated classifiers via resource-aware AutoML or an optional grid search. An account level bot detector reduces noise prior to labeling. We illustrate the workflow on Turkish Twitter/X migration discourse, using an eight-class attitude scheme merged into six super-classes for modeling and a class-balanced held out test set. On this set, the AutoML model attains accuracy 0.72 and macro-F1 0.71. For comparison outside the GUI, a parameter-efficient LoRA fine-tuned model (PEFT) reaches accuracy 0.78 and macro-F1 0.77. Errors for both models concentrate between conceptually adjacent classes (e.g., Identity - Security vs. Political Threat). FastCSSTool offers a no-code, end-to-end solution that allows social scientists without programming expertise to collect social data, train classifiers, analyze their corpora, and generate visual and tabular outputs.
+
+---
+
+## 🎯 Overview
 👋🏻 Welcome to the Field of Computational Social Science!
 
 Fast CSS Tool is here to simplify your data analysis journey. This intuitive application is designed to assist social scientists in analyzing digital datasets, including social media data, with ease.
@@ -156,6 +178,27 @@ Whether you're new to coding or simply looking for a more efficient way to handl
 - **Import Data and Model**: Load your analysis model and dataset.
 - **Graphical Analysis**: Perform and visualize various analyses like time series and distribution of data points.
 - **Export Analysis Results**: Save your analysis results for reporting or documentation purposes.
+
+## 🤖 Bot Detection Model
+
+FastCSSTool includes an account-level bot detector to reduce noise before labeling and training.
+
+- **Dataset**: Hydrated subset of the Twitter Bot Detection Dataset (n = 33,184 of 40,566 IDs)
+- **Features**: 17 metadata-derived features from author profiles and tweet records
+- **Model**: XGBoost selected via FLAML (macro-F1 objective), exported to ONNX
+- **Performance (held-out test)**: Accuracy = 0.85, Macro-F1 = 0.83  
+  - Human: Precision 0.87, Recall 0.92, F1 0.89  
+  - Bot:   Precision 0.82, Recall 0.72, F1 0.77
+
+<div align="center">
+  <img src="images/bot_detection_conf_matrix.png" alt="Bot detection confusion matrix" width="420" />
+  <br/>
+  <sub>Confusion matrix on the held-out test set.</sub>
+  <br/>
+  <sub>4,102 humans and 1,572 bots correctly identified; 345 false positives, 618 false negatives.</sub>
+  <br/>
+  <a href="./BOT_DETECTION.md">Full details and methodology</a>
+</div>
 
 ## License
 
