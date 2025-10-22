@@ -17,12 +17,6 @@
 
 ---
 
-## Abstract
-
-Computational social science often relies on end-to-end text-classification pipelines that many researchers cannot readily implement or reproduce. We present FastCSSTool, a no-code platform that integrates data ingestion, preprocessing, labeling, embedding-based Automated Machine Learning (AutoML) training, evaluation, analysis, and visualization in a single GUI. The system encodes texts as sentence embeddings (`paraphrase-multilingual-mpnet-base-v2`) and selects calibrated classifiers via resource-aware AutoML or an optional grid search. An account level bot detector reduces noise prior to labeling. We illustrate the workflow on Turkish Twitter/X migration discourse, using an eight-class attitude scheme merged into six super-classes for modeling and a class-balanced held out test set. On this set, the AutoML model attains accuracy 0.72 and macro-F1 0.71. For comparison outside the GUI, a parameter-efficient LoRA fine-tuned model (PEFT) reaches accuracy 0.78 and macro-F1 0.77. Errors for both models concentrate between conceptually adjacent classes (e.g., Identity - Security vs. Political Threat). FastCSSTool offers a no-code, end-to-end solution that allows social scientists without programming expertise to collect social data, train classifiers, analyze their corpora, and generate visual and tabular outputs.
-
----
-
 ## 🎯 Overview
 👋🏻 Welcome to the Field of Computational Social Science!
 
