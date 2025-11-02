@@ -9,10 +9,6 @@
 
 *FastCSSTool: A No‑Code Platform for Computational Social Science Text Classification*
 
-**Evrim Çağın Polat¹** and **Evrim Yılmaz Polat²**</br>
-1 *Chief Technical Officer, Notrino Research*  
-2 *Department of Sociology, Zonguldak Bülent Ecevit University*
-
 </div>
 
 ---
@@ -203,3 +199,4 @@ This tool uses the following main packages
 - [scikit-learn](https://scikit-learn.org/) library for machine learning algorithms.
 
 For any issues or questions, please contact [info@csstr.org].
+
